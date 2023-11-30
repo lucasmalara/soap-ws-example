@@ -60,7 +60,7 @@
 
   + [utils](./src/main/java/com/example/soap/example/utils)
     * class [YerbaMateConverter](./src/main/java/com/example/soap/example/utils/YerbaMateConverter.java)
-    * class [YerbaMateExampleProcessor](./src/main/java/com/example/soap/example/utils/YerbaMateExampleValidator.java)
+    * class [YerbaMateExampleProcessor](./src/main/java/com/example/soap/example/utils/YerbaMateExampleProcessor.java)
     * class [YerbaMateFactory](./src/main/java/com/example/soap/example/utils/YerbaMateFactory.java)
 
 <div align='right'>
