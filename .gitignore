@@ -1,0 +1,9 @@
+### MAVEN ###
+HELP.md
+mvn*
+.mvn
+
+### IntelliJ ###
+.idea
+target
+*.iml
