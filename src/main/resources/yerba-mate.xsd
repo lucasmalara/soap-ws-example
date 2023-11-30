@@ -1,0 +1,45 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://localhost:8080/soap-demo"
+           targetNamespace="http://localhost:8080/soap-demo"
+           elementFormDefault="qualified">
+
+    <xs:element name="getYerbaMateRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="brand" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getYerbaMateResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="yerbaMate" type="tns:yerbaMate"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- PAYLOAD -->
+    <xs:complexType name="yerbaMate">
+        <xs:sequence>
+            <xs:element name="brand" type="xs:string"/>
+            <xs:element name="origin" type="tns:country"/>
+            <xs:element name="type" type="tns:yerbaMateType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="country">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Argentina"/>
+            <xs:enumeration value="Brazil"/>
+            <xs:enumeration value="Paraguay"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="yerbaMateType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="elaborada"/>
+            <xs:enumeration value="despalada"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
