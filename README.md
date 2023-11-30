@@ -60,7 +60,7 @@
 
   + [utils](./src/main/java/com/example/soap/example/utils)
     * class [YerbaMateConverter](./src/main/java/com/example/soap/example/utils/YerbaMateConverter.java)
-    * class [YerbaMateExampleValidator](./src/main/java/com/example/soap/example/utils/YerbaMateExampleValidator.java)
+    * class [YerbaMateExampleProcessor](./src/main/java/com/example/soap/example/utils/YerbaMateExampleValidator.java)
     * class [YerbaMateFactory](./src/main/java/com/example/soap/example/utils/YerbaMateFactory.java)
 
 <div align='right'>
@@ -115,7 +115,7 @@
 8. Utils
 
    + **YerbaMateConvert** - Map DTOs and entities to each other using **ModelMapper**.
-   + **YerbaMateExampleValidator** - Validate usage of **YerbaMateExample** annotation.
+   + **YerbaMateExampleProcessor** - Process usage of **YerbaMateExample** annotation with `Java Reflections`.
    + **YerbaMateFactory** - Produces prebuilt instances of **YerbaMate**.
 
 <div align='right'>

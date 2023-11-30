@@ -21,11 +21,11 @@ import static com.example.soap.example.schema.YerbaMateType.ELABORADA;
 public class YerbaMateFactory {
 
     private static final Logger log = LoggerFactory.getLogger(YerbaMateFactory.class);
-    private final YerbaMateExampleValidator yerbaMateExampleValidator;
+    private final YerbaMateExampleProcessor yerbaMateExampleProcessor;
 
     @Autowired
-    public YerbaMateFactory(YerbaMateExampleValidator yerbaMateExampleValidator) {
-        this.yerbaMateExampleValidator = yerbaMateExampleValidator;
+    public YerbaMateFactory(YerbaMateExampleProcessor yerbaMateExampleProcessor) {
+        this.yerbaMateExampleProcessor = yerbaMateExampleProcessor;
     }
 
     private YerbaMate produce(String brand, YerbaMateType type, Country origin) {
@@ -41,8 +41,8 @@ public class YerbaMateFactory {
         try {
             Method[] methods = YerbaMateFactory.class.getDeclaredMethods();
             for (Method method : methods) {
-                YerbaMate example = yerbaMateExampleValidator.yerbaMateExampleFromMethod(method, this);
-                boolean nonEmptyExample = yerbaMateExampleValidator.yerbaMateNonEmpty(example);
+                YerbaMate example = yerbaMateExampleProcessor.yerbaMateExampleFromMethod(method, this);
+                boolean nonEmptyExample = yerbaMateExampleProcessor.yerbaMateNonEmpty(example);
                 if (nonEmptyExample) {
                     log.info("{}", "New YerbaMate example created: " + example.getBrand());
                     mateList.add(example);

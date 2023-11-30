@@ -8,7 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 @Component
-public class YerbaMateExampleValidator {
+public class YerbaMateExampleProcessor {
 
     public YerbaMate yerbaMateExampleFromMethod(Method method, Object obj) throws InvocationTargetException, IllegalAccessException {
         if (isAnnotatedWithYerbaMateExample(method) &&
