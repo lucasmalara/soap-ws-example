@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:std="http://localhost:8080/soap-demo">
+
+    <soapenv:Header/>
+    <soapenv:Body>
+        <std:getYerbaMateRequest>
+            <std:brand>Pajarito Classic</std:brand>
+        </std:getYerbaMateRequest>
+    </soapenv:Body>
+
+</soapenv:Envelope>
