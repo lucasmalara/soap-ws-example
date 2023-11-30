@@ -196,6 +196,8 @@ File [request-example.xml](./src/main/resources/request-example.xml "Request exa
     </soapenv:Envelope>
 ```
 
+Send request using `curl`:
+
 ```shell
     curl --location 'http://localhost:8080/soap-demo' --header 'Content-Type: text/xml' --data @./src/main/resources/request-example.xml
 ```
