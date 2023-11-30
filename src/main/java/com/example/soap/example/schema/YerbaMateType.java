@@ -8,8 +8,15 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum YerbaMateType {
 
+    /**
+     * Known as 'con palo.'
+     */
     @XmlEnumValue("elaborada")
     ELABORADA("elaborada"),
+
+    /**
+     * Known as 'sin palo'.
+     */
     @XmlEnumValue("despalada")
     DESPALADA("despalada");
     private final String value;
