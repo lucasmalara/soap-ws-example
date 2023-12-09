@@ -43,16 +43,16 @@
     * class [YerbaMateEntity](./src/main/java/com/example/soap/example/entity/YerbaMateEntity.java)
 
   + [persistence](./src/main/java/com/example/soap/example/persistence)
-    * class [YerbaMateRepository](./src/main/java/com/example/soap/example/persistence/YerbaMateRepository.java)
+    * interface [YerbaMateRepository](./src/main/java/com/example/soap/example/persistence/YerbaMateRepository.java)
 
   + [schema](./src/main/java/com/example/soap/example/schema)
-    * class [Country](./src/main/java/com/example/soap/example/schema/Country.java)
+    * enum [Country](./src/main/java/com/example/soap/example/schema/Country.java)
     * class [GetYerbaMateRequest](./src/main/java/com/example/soap/example/schema/GetYerbaMateRequest.java)
     * class [GetYerbaMateResponse](./src/main/java/com/example/soap/example/schema/GetYerbaMateResponse.java)
     * class [ObjectFactory](./src/main/java/com/example/soap/example/schema/ObjectFactory.java)
     * [package-info](./src/main/java/com/example/soap/example/schema/package-info.java)
     * class [YerbaMate](./src/main/java/com/example/soap/example/schema/YerbaMate.java)
-    * class [YerbaMateType](./src/main/java/com/example/soap/example/schema/YerbaMateType.java)
+    * enum [YerbaMateType](./src/main/java/com/example/soap/example/schema/YerbaMateType.java)
 
   + [service](./src/main/java/com/example/soap/example/service)
     * interface [YerbaMateService](./src/main/java/com/example/soap/example/service/YerbaMateService.java)
